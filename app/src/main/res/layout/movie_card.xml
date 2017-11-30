@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relative_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_relative_layout_marginleft"
+            android:layout_marginRight="@dimen/card_relative_layout_marginTop"
+            android:layout_marginTop="@dimen/card_relative_layout_marginTop"
+            android:layout_marginBottom="@dimen/card_relative_layout_marginButtom">
+
+            <ImageView
+                android:id="@+id/img_movie_poster"
+                android:layout_width="@dimen/image_view_card_width"
+                android:layout_height="@dimen/image_view_card_height"
+                android:background="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/txt_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_movie_poster"
+                android:drawableRight="@drawable/ic_play_arrow_black_24dp"
+                android:textAlignment="center"
+                android:textSize="@dimen/movie_name_text_size" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/relative_layout_1"
+            android:id="@+id/relative_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_relative_layout_marginleft"
+            android:layout_marginRight="@dimen/card_relative_layout_marginTop"
+            >
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="edeeee"/>
+
+            <TextView
+                android:id="@+id/txt_adult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="dddd"/>
+        </RelativeLayout>
+            <View
+                android:layout_below="@+id/relative_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black">
+
+            </View>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

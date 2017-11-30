@@ -13,7 +13,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @GET("movie/upcoming")
-    Call<Movie> getUpcomingMovie(@Query("api_key") int apiKey);
+    Call<Movie> getUpcomingMovie(@Query("api_key") String apiKey);
 
     @GET("movie/{movie-id}")
     Call<Movie> getMovieDetails(@Path("movie-id") int id, @Query("api_key") String apiKey);

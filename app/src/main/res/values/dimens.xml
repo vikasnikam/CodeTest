@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_view_card_height">100dp</dimen>
+    <dimen name="image_view_card_width">100dp</dimen>
+    <dimen name="card_album_radius">20dp</dimen>
+    <dimen name="card_margin_top">20dp</dimen>
+    <dimen name="card_margin_buttom">2dp</dimen>
+    <dimen name="movie_name_text_size">25sp</dimen>
+    <dimen name="card_relative_layout_marginTop">10dp</dimen>
+    <dimen name="card_relative_layout_marginButtom">10dp</dimen>
+    <dimen name="card_relative_layout_marginleft">20dp</dimen>
+    <dimen name="card_relative_layout_marginright">20dp</dimen>
+</resources>
